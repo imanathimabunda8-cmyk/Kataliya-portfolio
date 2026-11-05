@@ -1,0 +1,258 @@
+
+/* =========================
+   THE GARDEN - BASE STYLES
+========================= */
+
+:root {
+    --forest: #203D2D;
+    --sage: #789477;
+    --cream: #E9E5D5;
+    --earth: #B58B61;
+    --text: #263329;
+
+    --header-height: 80px;
+    --footer-height: 40px;
+}
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cream);
+    color: var(--text);
+    font-family: Georgia, serif;
+    overflow: hidden;
+}
+
+/* =========================
+   HEADER & NAVIGATION
+========================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5%;
+    background-color: var(--forest);
+    color: var(--cream);
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--earth);
+}
+
+nav a:hover {
+    color: var(--earth);
+}
+
+nav a.active {
+    color: var(--earth);
+    position: relative;
+}
+
+nav a.active::after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    bottom: -8px;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: var(--earth);
+}
+/* =========================
+   SWIPER LAYOUT
+========================= */
+
+.portfolio-swiper {
+    width: 100%;
+    height: calc(100vh - var(--header-height) - var(--footer-height));
+
+    margin-top: var(--header-height);
+    overflow: hidden;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Individual slide content */
+
+.slide-content {
+    width: 100%;
+    height: 100%;
+
+    padding: 60px 8%;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    overscroll-behavior-y: contain;
+}
+
+/* Vertical scrollbar styling */
+
+.slide-content {
+    scrollbar-width: thin;
+    scrollbar-color: var(--sage) var(--cream);
+}
+
+.slide-content::-webkit-scrollbar {
+    width: 7px;
+}
+
+.slide-content::-webkit-scrollbar-thumb {
+    background-color: var(--sage);
+    border-radius: 10px;
+}
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+section h2 {
+    font-size: 42px;
+    color: var(--forest);
+    margin-bottom: 30px;
+}
+
+/* =========================
+   EXPERIENCE & PROJECTS
+========================= */
+
+.experience-item,
+.project-item {
+    margin-bottom: 35px;
+    max-width: 750px;
+}
+
+article h3,
+.experience-item h3 {
+    color: var(--forest);
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+article h4,
+.experience-item h4 {
+    color: var(--sage);
+    margin-bottom: 12px;
+}
+
+section p {
+    line-height: 1.8;
+    margin-bottom: 18px;
+    max-width: 850px;
+}
+
+section ul {
+    padding-left: 25px;
+    line-height: 1.8;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: var(--footer-height);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--forest);
+    color: var(--cream);
+
+    font-size: 12px;
+    z-index: 100;
+}
+
+/* =========================
+   MOBILE SUPPORT
+========================= */
+
+@media (max-width: 700px) {
+
+    :root {
+        --header-height: 110px;
+        --footer-height: 35px;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        padding: 10px 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .slide-content {
+        padding: 35px 7%;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+
+    article h3,
+    .experience-item h3 {
+        font-size: 21px;
+    }
+}

@@ -75,10 +75,6 @@ nav a:hover {
     color: var(--earth);
 }
 
-nav a:hover {
-    color: var(--earth);
-}
-
 nav a.active {
     color: var(--earth);
     position: relative;
@@ -255,4 +251,688 @@ footer {
     .experience-item h3 {
         font-size: 21px;
     }
+}
+
+
+/* =========================
+   ABOUT SECTION - SPACING
+========================= */
+
+.about-content {
+    padding: 70px 8% 90px;
+}
+
+/* About introduction */
+
+.about-header {
+    margin-bottom: 45px;
+}
+
+.about-header .section-label {
+    display: block;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: var(--sage);
+    margin-bottom: 12px;
+}
+
+.about-header h2 {
+    margin-bottom: 22px;
+}
+
+.about-header h3 {
+    font-size: 23px;
+    color: var(--text);
+    margin-bottom: 0;
+}
+
+/* Personal story */
+
+.about-story {
+    max-width: 850px;
+}
+
+.about-story .story-year {
+    display: block;
+    color: var(--earth);
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.about-story p {
+    line-height: 2;
+    margin-bottom: 28px;
+}
+
+/* Closing statement */
+
+.about-quote {
+    margin-top: 55px;
+    padding: 30px 35px;
+    border-left: 3px solid var(--earth);
+    background-color: rgba(120, 148, 119, 0.12);
+    max-width: 850px;
+}
+
+.about-quote h3 {
+    color: var(--forest);
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.about-quote p {
+    margin-bottom: 0;
+    color: var(--sage);
+    font-style: italic;
+}
+
+
+/* =========================
+   ABOUT - BOTANICAL DETAILS
+========================= */
+
+/* Introduction decoration */
+
+.about-header {
+    position: relative;
+}
+
+/* Botanical flourish */
+
+.about-header::after {
+    content: "❧";
+
+    position: absolute;
+    top: 0;
+    right: 5%;
+
+    font-size: 75px;
+    line-height: 1;
+
+    color: var(--sage);
+    opacity: 0.45;
+
+    transform: rotate(-15deg);
+
+    pointer-events: none;
+}
+
+/* Decorative label divider */
+
+.about-header .section-label::after {
+    content: "";
+
+    display: block;
+
+    width: 65px;
+    height: 2px;
+
+    background-color: var(--earth);
+
+    margin-top: 14px;
+}
+
+/* Subtle separation before the story */
+
+.about-story {
+    border-top: 1px solid rgba(181, 139, 97, 0.45);
+    padding-top: 25px;
+}
+
+/* =========================
+   ABOUT - TYPOGRAPHY
+========================= */
+
+.about-header .section-label {
+    font-family: Georgia, serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.about-header h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(48px, 6vw, 76px);
+    font-weight: normal;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    color: var(--forest);
+}
+
+.about-header h3 {
+    font-family: Georgia, serif;
+    font-size: clamp(19px, 2vw, 24px);
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    color: var(--sage);
+}
+
+.about-story .story-year {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.about-story p {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.9;
+    letter-spacing: 0.1px;
+    color: var(--text);
+}
+
+.about-quote h3 {
+    font-family: Georgia, serif;
+    font-size: clamp(21px, 2.5vw, 27px);
+    font-weight: normal;
+    letter-spacing: 0.3px;
+    line-height: 1.4;
+}
+
+.about-quote p {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.3px;
+}
+
+/* =========================
+   EXPERIENCE - BASE LAYOUT
+========================= */
+
+.experience-content {
+    padding: 70px 8% 90px;
+}
+
+.experience-header {
+    margin-bottom: 55px;
+}
+
+.experience-header .section-label {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: var(--sage);
+    margin-bottom: 14px;
+}
+
+.experience-header h2 {
+    margin-bottom: 22px;
+}
+
+.experience-header h3 {
+    font-size: 23px;
+    font-weight: normal;
+    color: var(--sage);
+    margin-bottom: 0;
+}
+
+.experience-list {
+    max-width: 850px;
+}
+
+.experience-item {
+    padding: 30px 35px;
+    margin-bottom: 30px;
+    border-left: 3px solid var(--earth);
+    background-color: rgba(120, 148, 119, 0.10);
+}
+
+.experience-category {
+    display: block;
+    color: var(--sage);
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    margin-bottom: 16px;
+}
+
+.experience-item h3 {
+    color: var(--forest);
+    margin-bottom: 10px;
+}
+
+.experience-item h4 {
+    color: var(--earth);
+    margin-bottom: 18px;
+}
+
+.experience-item p {
+    line-height: 1.9;
+    margin-bottom: 0;
+}
+
+/* =========================
+   EXPERIENCE - BOTANICAL DETAILS
+========================= */
+
+.experience-header {
+    position: relative;
+}
+
+.experience-header::after {
+    content: "❧";
+    position: absolute;
+    top: 0;
+    right: 5%;
+    font-size: 75px;
+    line-height: 1;
+    color: var(--sage);
+    opacity: 0.45;
+    transform: rotate(-15deg);
+    pointer-events: none;
+}
+
+.experience-item {
+    position: relative;
+    border-radius: 2px;
+    transition: transform 0.3s ease,
+                background-color 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateX(6px);
+    background-color: rgba(120, 148, 119, 0.16);
+}
+
+.experience-item::before {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 35px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: var(--earth);
+    border: 3px solid var(--cream);
+}
+
+.experience-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: -3px;
+    top: 53px;
+    height: calc(100% + 30px);
+    width: 1px;
+    background-color: rgba(181, 139, 97, 0.5);
+    z-index: -1;
+}
+
+/* =========================
+   EXPERIENCE - TYPOGRAPHY
+========================= */
+
+.experience-header .section-label {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.experience-header h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(48px, 6vw, 76px);
+    font-weight: normal;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    color: var(--forest);
+}
+
+.experience-header h3 {
+    font-family: Georgia, serif;
+    font-size: clamp(19px, 2vw, 24px);
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.experience-category {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.experience-item h3 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    font-weight: normal;
+    line-height: 1.4;
+    letter-spacing: -0.3px;
+}
+
+.experience-item h4 {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+}
+
+.experience-item p {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.1px;
+}
+
+/* =========================
+   PROJECTS - BASE LAYOUT
+========================= */
+
+.projects-content {
+    padding: 70px 8% 90px;
+}
+
+.projects-header {
+    margin-bottom: 55px;
+}
+
+.projects-header .section-label {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: var(--sage);
+    margin-bottom: 14px;
+}
+
+.projects-header h2 {
+    margin-bottom: 22px;
+}
+
+.projects-header h3 {
+    font-size: 23px;
+    font-weight: normal;
+    color: var(--sage);
+    margin-bottom: 0;
+}
+
+.project-list {
+    max-width: 950px;
+}
+
+.project-item {
+    padding: 35px 40px;
+    margin-bottom: 35px;
+    border-left: 3px solid var(--earth);
+    background-color: rgba(120, 148, 119, 0.10);
+}
+
+.project-category {
+    display: block;
+    color: var(--sage);
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    margin-bottom: 18px;
+}
+
+.project-item h3 {
+    color: var(--forest);
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.project-item h4 {
+    color: var(--earth);
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 22px;
+}
+
+.project-description {
+    max-width: 800px;
+}
+
+.project-description p {
+    line-height: 1.9;
+    margin-bottom: 22px;
+}
+
+.project-technologies {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(181, 139, 97, 0.4);
+}
+
+.technology-label {
+    display: block;
+    color: var(--sage);
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    margin-bottom: 15px;
+}
+
+.project-technologies ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-technologies li {
+    padding: 8px 16px;
+    border: 1px solid rgba(32, 61, 45, 0.25);
+    color: var(--forest);
+    font-size: 13px;
+}
+
+/* =========================
+   PROJECTS - PREVIEW IMAGE
+========================= */
+
+.project-preview {
+    width: 100%;
+    margin-bottom: 35px;
+    overflow: hidden;
+    border: 1px solid rgba(181, 139, 97, 0.45);
+    border-radius: 4px;
+    background-color: var(--cream);
+}
+
+.project-preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-preview:hover img {
+    transform: scale(1.02);
+}
+
+/* =========================
+   PROJECTS - PREVIEW IMAGE
+========================= */
+
+.project-preview {
+    width: 100%;
+    margin-bottom: 35px;
+    overflow: hidden;
+    border: 1px solid rgba(181, 139, 97, 0.45);
+    border-radius: 4px;
+    background-color: var(--cream);
+}
+
+.project-preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.project-preview:hover img {
+    transform: scale(1.02);
+}
+
+/* =========================
+   PROJECTS - TYPOGRAPHY
+========================= */
+
+.projects-header .section-label {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.projects-header h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(48px, 6vw, 76px);
+    font-weight: normal;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    color: var(--forest);
+}
+
+.projects-header h3 {
+    font-family: Georgia, serif;
+    font-size: clamp(19px, 2vw, 24px);
+    font-weight: normal;
+    line-height: 1.5;
+    color: var(--sage);
+}
+
+.project-category {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.project-item h3 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+    line-height: 1.3;
+}
+
+.project-item h4 {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0.3px;
+    line-height: 1.6;
+}
+
+.project-description p {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.1px;
+    color: var(--text);
+}
+
+.technology-label {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+.project-technologies li {
+    font-family: Georgia, serif;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+/* PROJECTS - LINKS */
+.project-links {
+    margin-top: 30px;
+}
+
+.project-links a {
+    display: inline-block;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    color: var(--forest);
+    text-decoration: none;
+    border-bottom: 1px solid var(--earth);
+    padding-bottom: 5px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.project-links a:hover {
+    color: var(--earth);
+    border-color: var(--forest);
+}
+
+
+/* CONTACTS - BASE LAYOUT */
+#contacts .slide-content {
+    padding: 90px 8%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#contacts h2 {
+    margin-bottom: 25px;
+}
+
+#contacts p {
+    max-width: 600px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+#contacts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* CONTACTS - LINKS */
+#contacts ul li a {
+    display: inline-block;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    color: var(--forest);
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(181, 139, 97, 0.5);
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+#contacts ul li a:hover {
+    color: var(--earth);
+    border-color: var(--forest);
+}
+
+
+/* CONTACTS - TYPOGRAPHY */
+
+#contacts h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(48px, 6vw, 76px);
+    font-weight: normal;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    color: var(--forest);
+}
+
+#contacts p {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.9;
+    letter-spacing: 0.2px;
+    color: var(--text);
+}
+
+#contacts ul li a {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: 0.4px;
 }
